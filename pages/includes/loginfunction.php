@@ -8,7 +8,7 @@ if(!empty($_POST["email"]))
     //echo "hello";
     $email=test_input($_POST['email']);
     $password=test_input($_POST['password']);
-    
+       
     $email=mysqli_real_escape_string($connection,$email);
     $password=mysqli_real_escape_string($connection,$password);
     
