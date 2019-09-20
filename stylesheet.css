@@ -1,0 +1,380 @@
+/*===========================================================================================================                                           GENERAL SECTION
+===========================================================================================================*/
+
+html,body{
+    height: 100%;
+    
+}
+
+/*===========================================================================================================                                           BUTTON SECTION
+===========================================================================================================*/
+
+.btn-general{
+    background: #fea401;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+
+body{
+    margin:0px;
+    padding:0px;
+    
+}
+.containers{
+    margin-left:13%;
+}
+.header-strip{
+    background-color: #fda401;
+    width:100%;
+    height:35px;
+}
+.dot{
+    padding:5px;
+    margin-left:10%;
+    color: white;
+}
+
+.number{
+    margin-left:10px;
+    margin-bottom:-20px;
+}
+.icon1{
+    margin-left:5%;
+}
+.change{
+    margin-top:2%;
+}
+.cover{
+    margin-top:-20px;
+    background-image: url('../img/home.jpg');
+    width:100%;
+    height:200px;
+
+    box-shadow:inset 1px black;
+    
+}
+.bg-parallax{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*only can be used in css not in html imgsrc*/
+    background-attachment: fixed;
+}
+
+.img-overlay{
+    position:relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:200px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.something{
+    position:absolute;
+    margin-top:3%;
+    
+}
+.blog-text{
+    font-family: nunito;
+    color:#fda401;
+    font-size:40px;
+    
+}
+.blogs-text{
+    font-family: nunito;
+    color:white;
+    font-size:40px;
+}
+.same-section{
+    width:1000px;
+}
+.add{
+    border:none;
+    position:absolute;    
+    background-color: #fda401;
+    width:50px;
+    height:5px;
+    border-radius: 25px;
+    margin-top:10px;
+    
+}
+.text{
+    font-family: nunito;
+    position: absolute;
+    font-size:20px;
+    color:white;
+    margin-left:60px;
+    
+}
+
+/*===========================================================================================================                                          ABOUT SECTION
+===========================================================================================================*/
+.about-heading{
+    font-size: 20px;
+}
+.about-heading span{
+    color: #fea401;
+}
+.box1{
+    background: #fea401;
+    padding-top: 100px;
+    margin: 20px 0;
+    width: 300px;
+    height: 250px;
+    color: #fff;
+}
+.about-cover{
+    margin-left: 50px 0;
+}
+
+/*===========================================================================================================                                         TOUR SECTION
+===========================================================================================================*/
+.tour-section{
+    height: 100%;
+}
+.tour-cover{
+    background-color: #14171d;
+    height: 61%;
+    padding-top: 80px;
+}
+.tour-line{
+    color: #fea401;
+}
+.content-box{
+    color: #fff;
+    text-align: center;
+}
+.content-box em{
+    font-style: italic;
+}
+.box2{
+    background: #fea401;
+    padding-top: 120px;
+    margin-left: 22%;
+    width: 58%;
+    height: 300px;
+    border-radius: 5px;
+}
+.tour-heading{
+    padding-bottom: 60px;
+}
+.joining{
+    background-color: #fda401;
+    width:100%;
+    height:100px;
+}
+.join{
+    font-size:20px;
+    color:white;
+    font-family: nunito;
+    padding-top:5px;
+    padding-left:13%;
+}
+.join-text{
+    float:left;
+    width:1000px;
+    margin-left:5%;
+    
+}
+.join1{
+    font-size:30px;
+    color:white;
+    font-family: nunito;
+    padding-left:13%;
+}
+.white-button{
+    float:left;
+    font-family: rubik;
+    background: white;
+    border-radius: 25px;
+    color:black;
+    margin-top:2%;
+    border:none;
+    width:150px;
+    height:40px;
+    
+}
+.clearfix::after{
+    display:table;
+    clear:both;
+    content:"";
+}
+/*===========================================================================================================                                         GOAL SECTION
+===========================================================================================================*/
+
+/*contact-cards*/
+.about-information{
+    font-weight:300;
+}
+.goal-inner{
+    margin-left: 40px
+}
+.para{
+  font-weight: 500;
+    font-size: 20px;
+     padding-top: 30px;
+/*    padding: 5px 0;*/
+    text-transform: capitalize;
+    text-align: center;
+}
+.para1{
+    color: #FEA401;
+    text-transform: capitalize;
+    font-size: 16px;
+   text-align: center;
+}
+.para2{
+    text-align: center;
+    padding: 10px;
+}
+.cover1{
+   background-color: #fff; 
+}
+.your-goals{
+    margin-top: 150px;
+}
+.goals{
+    width: 100%;
+    height: 67%;
+    background-color: #FEA401;
+}
+.goals-inner{
+    width: 100%;
+    height: 42%;
+/*    height: -30%;*/
+    background-color: #fff;
+}
+.logo-span-1{
+    font-size: 20px;
+    color: #222;
+}
+.logo-span-11{
+    margin-top: -100px;
+}
+.logo-span-2{
+    font-size: 20px;
+    color: #FEA401;
+}
+/*===========================================================================================================                                         FOOTER SECTION
+===========================================================================================================*/
+.top-padding{
+    padding-top: 20px;
+}
+.footer-cover{
+
+    background-color: #090807;
+}
+.header{
+    color:#FEA401;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.ptext{
+    font-size: 14px;
+    color: #fff;
+}
+
+/*social-icons*/
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+/*
+    margin-right: 6px;
+    margin-top: 10px;
+*/
+}
+a{
+    color: #fff;
+}
+/*
+.social-list .facebook .browser .twitter .youtube{
+    color: #fff;
+}
+*/
+
+.facebook .browser .twitter .youtube:hover,
+.facebook .browser .twitter .youtube:focus{
+    color: #FEA401;
+}
+
+hr{
+    content: "";
+    width: 40px;
+    height: 5px;
+    color: #fff;
+    margin: 0;
+/*    text-align: left;*/
+}
+.heading-cover .twitter-head{
+    color:#FEA401;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.link-style{
+    list-style: none;
+    text-decoration: none;
+    color: #FEA401;
+    display: block;
+}
+.date{
+    padding-top: 20px;
+}
+
+.days{
+    text-transform: uppercase;
+}
+.ytext{
+    color: #FEA401;
+    text-transform: uppercase;
+}
+.copyright-text{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-span{
+    text-align: center;
+    color: #FEA401;
+    text-transform: uppercase;
+}
+
+/*contact-cards*/
+.about-information{
+    font-weight:300;
+}
+.gaol-section{
+    height: 100%;
+}
+.goal-inner{
+    margin-left: 40px
+}
+.para{
+  font-weight: 500;
+    font-size: 20px;
+     padding-top: 30px;
+/*    padding: 5px 0;*/
+    text-transform: capitalize;
+    text-align: center;
+}
+.para1{
+    color: #FEA401;
+    text-transform: capitalize;
+    font-size: 16px;
+   text-align: center;
+}
+.para2{
+    text-align: center;
+    padding: 10px;
+}
+.cover{
+   background-color: #fff; 
+}

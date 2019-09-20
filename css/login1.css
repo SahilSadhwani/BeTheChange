@@ -1,0 +1,138 @@
+body{
+    background-color:#fda401;
+    margin:0px;
+    padding:0px;
+}
+#box{
+    height:200px;
+    width:1000px;
+    background: #2d2d2d;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 5px;
+}
+#main{
+    width:450px;
+    height:550px;
+    background: white;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:70%;
+    position: absolute;
+    z-index:99;
+    
+    
+}
+#login_form{
+    top:40%;
+    left:70%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    z-index:999;
+    
+}
+#signup_form{
+    top:10%;
+    left:70%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    z-index:999;
+    
+}
+#signup_form{
+    top:45%;
+    left:75%;
+    visibility: hidden;
+    
+}
+#login_form h1,#signup_form h1{
+    font-size:40px;
+    margin-top:-10%;
+    color:#fda401;
+    font-family: sans-serif;
+    
+}
+#login_form input,#signup_form input{
+    outline:none;
+    border:0px;
+    height:40px;
+    width:300px;
+    border-bottom:1px solid black;
+    margin:0px;
+    font-size:15px;
+    margin:5px; 
+    
+    
+    
+}
+.radio-input{
+    outline:none;
+    border:0px;
+    height:20px;
+    width:20px;
+    border-bottom:1px solid black;
+    margin:0px;
+    font-size:15px;
+    margin:5px; 
+    
+    
+    
+}
+
+#login_form button,#signup_form button{
+    background:#fda401;
+    padding:10px;
+    margin-top:30px;
+    margin-left:150px;
+    width:120px;
+    border-radius: 5px;
+    font-size:15px;
+    color: white;
+    font-family: sans-serif;
+    border:none;
+    
+    
+}
+#login_form button,#signup_form button:hover{
+    cursor: pointer;
+    background:#fda401;
+    
+}
+#log_button,#signup_button{
+    height:35px;
+    width:120px;
+    background:transparent;
+    color:white;
+    left:75%;
+    top:60%;
+    border:1px solid white;
+    border-radius: 5px;
+    outline:none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: all .20s;    
+}
+#signup_button{
+    left:25%;
+}
+#log_button:hover,#signup_button:hover{
+    background: white;
+    cursor:pointer;
+    color:#2d2d2d;
+}
+#login_msg,#signup_msg{
+    color:white;
+    font-size:20px;
+    font-family: sans-serif;
+    top:35%;
+    left:75%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    
+}
+#signup_msg{
+    left:25%;
+}

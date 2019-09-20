@@ -1,0 +1,371 @@
+body{
+    margin:0px;
+    padding:0px;
+    
+}
+.containers{
+    margin-left:13%;
+}
+.header-strip{
+    background-color: #fda401;
+    width:100%;
+    height:35px;
+}
+.dot{
+    padding:5px;
+    margin-left:10%;
+    color: white;
+}
+
+.number{
+    margin-left:10px;
+    margin-bottom:-20px;
+}
+.icon1{
+    margin-left:5%;
+}
+.change{
+    margin-top:2%;
+}
+.cover{
+    margin-top:-20px;
+    background-image: url("img/rawpixel-587848-unsplash.jpg");
+    width:100%;
+    height:200px;
+
+    box-shadow:inset 1px black;
+    
+}
+.bg-parallax{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*only can be used in css not in html imgsrc*/
+    background-attachment: fixed;
+}
+
+.img-overlay{
+    position:relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:200px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.something{
+    position:absolute;
+    margin-top:3%;
+    
+}
+.blog-text{
+    font-family: nunito;
+    color:#fda401;
+    font-size:40px;
+    
+}
+.blogs-text{
+    font-family: nunito;
+    color:white;
+    font-size:40px;
+}
+.same-section{
+    width:1000px;
+}
+.add{
+    border:none;
+    position:absolute;    
+    background-color: #fda401;
+    width:50px;
+    height:5px;
+    border-radius: 25px;
+    margin-top:10px;
+    
+}
+.text{
+    font-family: nunito;
+    position: absolute;
+    font-size:20px;
+    color:white;
+    margin-left:60px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*style.css for contact us page*/
+.contact-header-main{
+    text-align: center;
+    font-weight: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-icon .fa{
+    color: #FEA401;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.contact-header-main-span{
+    font-weight: 400;
+}
+.contact-info .contact-head{
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.contact-desc , .contact-text{
+    color: #888;
+}
+
+.form-control{
+    border: none;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contact-email:hover,
+.contact-email:focus{
+/*    color: #FEA401;*/
+     border-bottom: solid 1px #FEA401;
+}
+.contact-message .form-control{
+    padding-bottom: 70px;
+    border:none;
+    border-bottom: solid 1px #ccc;
+}
+.contact-button{
+    background-color: #FEA401;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.contact-cards-section{
+    height: 100%;
+}
+.contact-card{
+    width: 100%;
+    height: 30%;
+    background-color: #FEA401;
+}
+.cards-section{
+    background-color: #fff;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.contact-para{
+    display: block;
+    
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.social-icons{
+    color: #ccc;
+}
+.social-icons:hover,
+.social-icons:focus{
+    color: #FEA401;
+}
+.contact-card-heading{
+    font-size: #222;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/*contact-cards*/
+.about-information{
+    font-weight:300;
+}
+.goal-inner{
+    margin-left: 40px
+}
+.para{
+  font-weight: 500;
+    font-size: 20px;
+     padding-top: 30px;
+/*    padding: 5px 0;*/
+    text-transform: capitalize;
+    text-align: center;
+}
+.para1{
+    color: #FEA401;
+    text-transform: capitalize;
+    font-size: 16px;
+   text-align: center;
+}
+.para2{
+    text-align: center;
+    padding: 10px;
+}
+.cover{
+   background-color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.top-padding{
+    padding-top: 20px;
+}
+.footer-cover{
+
+    background-color: #090807;
+}
+.header{
+    color:#FEA401;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.ptext{
+    font-size: 14px;
+    color: #fff;
+}
+
+/*social-icons*/
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+/*
+    margin-right: 6px;
+    margin-top: 10px;
+*/
+}
+a{
+    color: #fff;
+}
+/*
+.social-list .facebook .browser .twitter .youtube{
+    color: #fff;
+}
+*/
+
+.facebook .browser .twitter .youtube:hover,
+.facebook .browser .twitter .youtube:focus{
+    color: #FEA401;
+}
+
+hr{
+    content: "";
+    width: 40px;
+    height: 5px;
+    color: #fff;
+    margin: 0;
+/*    text-align: left;*/
+}
+.heading-cover .twitter-head{
+    color:#FEA401;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.link-style{
+    list-style: none;
+    text-decoration: none;
+    color: #FEA401;
+    display: block;
+}
+.date{
+    padding-top: 20px;
+}
+
+.days{
+    text-transform: uppercase;
+}
+.ytext{
+    color: #FEA401;
+    text-transform: uppercase;
+}
+.copyright-text{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer-span{
+    text-align: center;
+    color: #FEA401;
+    text-transform: uppercase;
+}
+.goals{
+    width: 100%;
+    height: 83%;
+    background-color: #FEA401;
+}
+.goals-inner{
+    width: 100%;
+    height: 42%;
+/*    height: -30%;*/
+    background-color: #fff;
+}
+.logo-span-1{
+    font-size: 20px;
+    color: #222;
+    font-weight: 700;
+}
+.logo-span-11{
+    margin-top: -100px;
+}
+.logo-span-2{
+    font-size: 20px;
+    color: #FEA401;
+}
