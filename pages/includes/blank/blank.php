@@ -5,6 +5,7 @@ ob_start();
   // print_r($_SESSION);
   if($_SESSION['did']==NULL)
   {
+      
       header("Location: ../../../index.php");
   }
   
