@@ -283,7 +283,7 @@ text font size : 16
 }
 .sidebar-container{
     background: #fc3;
-    width:300px;
+    width:15%;
     height:1050px;
 }
 @media screen and (max-width: 1024px) {
@@ -295,10 +295,12 @@ text font size : 16
     background:#eee;
     width:80%;
     height:800px;
+    
 }
 .right-wala{
     margin-left:3%;
     margin-top:3%;
+    
 }
 .box{
     border: 0.5px solid white;
@@ -307,7 +309,7 @@ text font size : 16
     margin-left:10%;
     background:#fda401;
     width:150px;
-    height:5%;
+    height:15%;
     box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.25);
     cursor:pointer;
     transition: transform .2s;

@@ -1,11 +1,12 @@
 <?php
+//session_start();
 // echo "hello";
 require_once("db.php");
 require_once("functions.php");
-session_start();
+
 if(!empty($_POST["email"]))
 {
-    //echo "hello";
+//    echo "hello";
     $email=test_input($_POST['email']);
     $password=test_input($_POST['password']);
        
@@ -13,7 +14,7 @@ if(!empty($_POST["email"]))
     $password=mysqli_real_escape_string($connection,$password);
     
     $query="SELECT * FROM users WHERE U_EMAIL = '$email' and PASSWORD = '$password'";
-    // print_r($query);
+     print_r($query);
     // exit;
 
     $select_user_details = mysqli_query($connection,$query);
@@ -21,7 +22,7 @@ if(!empty($_POST["email"]))
 //    proceed if there is data returned otherwise there would be errors
 
     checkQueryResult($select_user_details);
-    // print_r($select_user_details);
+//     print_r($select_user_details);
     // exit;
 
     if(mysqli_num_rows($select_user_details)>1){
@@ -36,51 +37,57 @@ if(!empty($_POST["email"]))
         $uid = $row['UID'];
         $role = $row['U_TYPE'];
         $phone = $row['U_PHONE'];
-//        print_r($role);
-        
+         $email = $row['U_EMAIL'];
+       
+      //  print_r($role);
+    if(password_verify($password, $db_password)){
+//        echo $role;
+    
         //session variable according to role
         if($role==1)
         {
             $_SESSION['uid'] = $uid;
-            $_SESSION['did'] = $uid;
-            $_SESSION['vid'] = NULL;
-            $_SESSION['nid'] = NULL;
             $_SESSION['uname'] = $uname;
-            header("Location: users/users.php");
+            header("Location: admin/add_ngo.php");
         }
         elseif($role==2)
         {
             $_SESSION['uid'] = $uid;
-            $_SESSION['did'] = NULL;
-            $_SESSION['vid'] = $uid;
-            $_SESSION['nid'] = NULL;
             $_SESSION['uname'] = $uname;
-            header("Location: ../../volunteers.php");
+            header("Location: users/users.php");
         }
         elseif($role==3){
             $_SESSION['uid'] = $uid;
-            $_SESSION['did'] = NULL;
-            $_SESSION['vid'] = NULL;
-            $_SESSION['nid'] = $uid;
             $_SESSION['uname'] = $uname;
-            header("Location: ../../ngo.php");
+            $query = "SELECT * FROM ngo WHERE ngo_email = '$email'";
+            $result = mysqli_query($connection, $query);
+            $row = mysqli_fetch_assoc($result);
+            $ngo_id = $row['ngo_id'];
+            $_SESSION['ngo_id'] = $ngo_id;
+            $ngo_category_id = $row['ngo_category_id'];
+//            $query = "SELECT * FROM ngo_category WHERE category_id = $ngo_category_id";
+//            $result = mysqli_query($connection, $query);
+//            $row = mysqli_fetch_assoc($result);
+            if($ngo_category_id==1)
+                header("Location: ngo/ngo1.php");
+            elseif($ngo_category_id==2)
+                header("Location: ngo/ngo2.php");
+            elseif($ngo_category_id==3)
+                header("Location: ngo/ngo3.php");
+            elseif($ngo_category_id==4)
+                header("Location: ngo/ngo4.php");
+            
         }
-        elseif($role==4){
-            $_SESSION['uid'] = $uid;
-            $_SESSION['did'] = NULL;
-            $_SESSION['vid'] = NULL;
-            $_SESSION['nid'] = NULL;
-            $_SESSION['uname'] = $uname;
-            header("Location: ../../header.php");
-        }
-    }
 
-}
-else
+    }
+        else
 {
     $db_password="";
    header("Location: ../../login.php");
 }
+    }
+}
+
 
 function test_input($data) {
   $data = trim($data);

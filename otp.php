@@ -1,12 +1,12 @@
 <?php
 session_start();
-$phone_number = $_SESSION["phone_number"];
+//$phone_number = $_SESSION["phone_number"];
 $random_number = rand(1000,9999);
 $_POST["random_number"] = $random_number;
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?country=91&sender=CHANGE&route=4&mobiles=".$phone_number."&authkey=242769ABa2cfCGg5bc34724&message=The otp is ".$random_number,
+//  CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?country=91&sender=CHANGE&route=4&mobiles=".$phone_number."&authkey=242769ABa2cfCGg5bc34724&message=The otp is ".$random_number,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,

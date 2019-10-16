@@ -3,11 +3,11 @@
 ob_start();
  
   // print_r($_SESSION);
-  if($_SESSION['did']==NULL)
-  {
-      
-      header("Location: ../../../index.php");
-  }
+//  if($_SESSION['did']==NULL)
+//  {
+//      
+//      header("Location: ../../../index.php");
+//  }
   
   // $donations=getngodonations();
   // echo "<pre>";
@@ -29,18 +29,18 @@ ob_start();
             die();
         }
 
-        $total_pages_sql = "SELECT COUNT(*) FROM donations";
-        $result = mysqli_query($connection,$total_pages_sql);
-        $total_rows = mysqli_fetch_array($result)[0];
-        $total_pages = ceil($total_rows / $no_of_records_per_page);
+//        $total_pages_sql = "SELECT COUNT(*) FROM donations";
+//        $result = mysqli_query($connection,$total_pages_sql);
+//        $total_rows = mysqli_fetch_array($result)[0];
+//        $total_pages = ceil($total_rows / $no_of_records_per_page);
 
-        $sql = "SELECT * FROM donations LIMIT $offset, $no_of_records_per_page";
-        $res_data = mysqli_query($connection,$sql);
-        while($row = mysqli_fetch_array($res_data)){
-         
-            $donations[]=$row;
-          
-        }
+//        $sql = "SELECT * FROM donations LIMIT $offset, $no_of_records_per_page";
+//        $res_data = mysqli_query($connection,$sql);
+//        while($row = mysqli_fetch_array($res_data)){
+//         
+//            $donations[]=$row;
+//          
+//        }
          // echo "<pre>";
          //    print_r($donations);
         
@@ -79,14 +79,15 @@ ob_start();
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right change">
             <li class="big"><a href="#" style="color:white;">HOME</a></li>
-            <?php if(!empty($_SESSION['did']))
-              {
+            <?php 
+//              if(!empty($_SESSION['did']))
+//              {
                   ?>
             <li><a href="../../../profile.php" style="color:white;">PROFILE</a></li>
             <li><a href="../../../about.html" style="color:white;">ABOUT</a></li>
             <li><a href="../../../pages/includes/logout.php" style="color:white;">LOGOUT</a></li>
             <?php
-              }
+//              }
               ?>
           </ul>
         </div>
@@ -119,7 +120,7 @@ ob_start();
           <hr style="width:100%;background:#000000;">
           
           <h2 class="text-center side-option" style="color:#777;font-size:30px;">Donations</h2>
-          <hr style="width:100%;background:#000000;">
+          <hr style="width:100%;">
           
           <h2 class="text-center side-option" style="color:#777;font-size:30px;">Donations</h2>
           <hr style="width:100%;background:#000000;">

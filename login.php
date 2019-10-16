@@ -29,16 +29,7 @@
                     <!-- <input type="text" placeholder="age" name="age" required=""><br> -->
                     <input type="email" placeholder="Email" name="email" required=""><br>
                     <input type="password" placeholder="Password" name="password" required=""><br>
-                    <input type="phone" placeholder="PhoneNumber" name="phone" required=""><br><br>
-                    <div class="form-group">
-                        <select name="category_id" id="category_id" class="form-control" style="border:1px solid #454545;">
-                           <option>Choose Ur Role</option>
-                           <option>Volunteer</option>
-                           <option>Donor</option>
-                           <option>NGO</option>
-                            
-                        </select>
-                    </div>
+                    <input type="location" placeholder="Location" name="location" required=""><br><br>
                 
                     
                     
